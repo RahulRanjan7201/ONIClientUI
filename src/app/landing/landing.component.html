@@ -1,0 +1,24 @@
+
+
+<div *ngIf="postsData.length">
+<div *ngFor="let item of postsData">
+
+<mat-card class="example-card"  >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{item.userEmail}}</mat-card-title>
+      <mat-card-subtitle>Posted At :{{item.createdAt  | date:'medium'}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ0kcFTn2qg5SMR_o2dMErakXQoFgJB2ZLY5x6ngD9Y_brrZjA&s" alt="Commin Soon">
+    <mat-card-content>
+      <p>
+       {{item.message}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>

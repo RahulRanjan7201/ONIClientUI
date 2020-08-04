@@ -1,0 +1,6 @@
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
+    <span>
+     ONI SOCIAL Networking Site
+    </span>
+  </mat-toolbar>
+  <app-navigation *ngIf="isLoggedIn$ | async as isLoggedIn"></app-navigation>

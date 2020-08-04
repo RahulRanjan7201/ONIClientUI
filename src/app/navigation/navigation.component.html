@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side">
+      <mat-nav-list>
+        <a mat-list-item (click)="navigateToHome()">Home</a>
+        <a mat-list-item (click)="navigateToCreate()">Create Post</a>
+        <a mat-list-item (click)="logout()">logout</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
